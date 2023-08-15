@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Verilen ürün satış fiyatının ham fiyatını bulunuz.
  * Satış fiyatı %18 kdv ve %15 kar oranlarını içermektedir.
  */
-public class Problem3 {
+public class Problem03 {
 
 	public static void main(String[] args) {
 		

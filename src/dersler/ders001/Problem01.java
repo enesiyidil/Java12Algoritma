@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 
  * @author enesb
  */
-public class Problem1 {
+public class Problem01 {
 
 	public static void main(String[] args) {
 		

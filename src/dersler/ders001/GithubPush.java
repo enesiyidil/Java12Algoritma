@@ -13,13 +13,6 @@ public class GithubPush {
 	 * Class(Sınıf) ilimleri PascalCase tarzında isimlendirilir.
 	 */
 	
-	/**
-	 * GithubPush sınıfının main fonksiyonudur.
-	 * 
-	 * @author enesb
-	 * @param args
-	 */
-
 	public static void main(String[] args) {
 		/*
 		 * create a new repository on the command line
