@@ -11,13 +11,6 @@ import java.util.Scanner;
  */
 public class Problem34 {
 
-	/**
-	 * Counts the desired character in the text
-	 * 
-	 * @param text			-> Expression.						Type : String
-	 * @param character		-> Desired character.				Type : char
-	 * @return				Returns the number of characters	Type : int
-	 */
 	static int stringCharCounter(String text, char character) {
         int coun = 0;
         for (char c : text.toCharArray()) {
@@ -28,13 +21,6 @@ public class Problem34 {
         return coun;
     }
 	
-	/**
-	 * Does the expression of type String contain  
-	 * 'ı', 'ş', 'ü', 'ç', 'ö', 'ğ', ',', '!', '%', '&', '=', '?'
-	 * 
-	 * @param text	-> Expression.							Type : String	
-	 * @return		Returns does the expression contain.	Type : boolean
-	 */
 	static boolean containsChar(String text) {
 		boolean isContain = true;
 		char[] ch = new char[] {'ı', 'ş', 'ü', 'ç', 'ö', 'ğ', ',', '!', '%', '&', '=', '?'};

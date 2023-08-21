@@ -31,7 +31,7 @@ public class Problem31 {
 		System.out.println();
 		System.out.println("*********************************************************************************************");
 		
-		text = "Java  , ,,  Spring   , Postgre,   React  ,, ";
+		text = "   ,, Java  , ,,  Spring   , Postgre,  ,,, ,, React ,,  ";
 		int baslangicIndex = 0;
 		String textBoslukEklenmis = text.replace(" ", "").concat(" ");
 		for(int i = 0; i < textBoslukEklenmis.length(); i++) {
