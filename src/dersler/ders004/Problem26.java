@@ -36,7 +36,7 @@ public class Problem26 {
 			}
 		}
 		System.out.println("Girilen sayıların en büyüğü -> " + maxSayi + ", en küçüğü -> " + minSayi);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 	
 }

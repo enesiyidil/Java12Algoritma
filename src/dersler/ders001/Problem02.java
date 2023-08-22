@@ -25,6 +25,7 @@ public class Problem02 {
 		
 		carpim = num1 * num2;
 		System.out.println("Sonuc = " + carpim);
+		scanner.close(); // scaner nesnesi kapandı
 
 	}
 	

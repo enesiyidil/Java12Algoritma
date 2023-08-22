@@ -45,7 +45,7 @@ public class Problem09 {
 		}else {
 			System.out.println("Hatalı değer girdiniz");
 		}
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

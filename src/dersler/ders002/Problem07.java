@@ -22,7 +22,7 @@ public class Problem07 {
 			System.out.println("Sayı tek");
 		}
 		
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

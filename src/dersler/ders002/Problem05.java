@@ -21,6 +21,7 @@ public class Problem05 {
 		
 		usd = tl / usdKuru;
 		System.out.println("USD karşılığı : " + usd);
+		scanner.close(); // scaner nesnesi kapandı
 		
 	}
 

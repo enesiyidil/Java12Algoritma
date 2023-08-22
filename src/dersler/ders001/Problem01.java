@@ -24,6 +24,7 @@ public class Problem01 {
 		soyIsim = scanner.next();
 		
 		System.out.println("Hoşgeldiniz " + isim + " " + soyIsim);
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

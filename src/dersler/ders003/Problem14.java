@@ -44,7 +44,7 @@ public class Problem14 {
 			}
 		}
 		System.out.println(sayiSiralama);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

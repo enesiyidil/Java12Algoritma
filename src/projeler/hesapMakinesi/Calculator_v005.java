@@ -323,7 +323,7 @@ public class Calculator_v005 {
 		
 		result = calculation(mathOperation, operators, numbers);
 		System.out.println("\u001B[32m" + mathOperation + " = " + result + "\u001B[0m");
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

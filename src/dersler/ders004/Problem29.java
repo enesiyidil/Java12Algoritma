@@ -49,7 +49,7 @@ public class Problem29 {
 			sayiIndex++;
 		}
 		System.out.println(islem + " = " + sonuc);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

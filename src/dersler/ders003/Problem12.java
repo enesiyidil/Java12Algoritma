@@ -25,7 +25,7 @@ public class Problem12 {
 		}else {
 			System.out.println(false);
 		}
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

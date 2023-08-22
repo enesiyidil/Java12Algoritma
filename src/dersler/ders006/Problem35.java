@@ -156,7 +156,7 @@ public class Problem35 {
 				break;
 			}
 		}
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

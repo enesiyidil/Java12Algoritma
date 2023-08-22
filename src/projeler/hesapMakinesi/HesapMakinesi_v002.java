@@ -95,7 +95,7 @@ public class HesapMakinesi_v002 {
 		
 		
 		System.out.println(sonuc);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

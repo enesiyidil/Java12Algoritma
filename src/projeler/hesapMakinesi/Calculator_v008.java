@@ -11,13 +11,13 @@ import java.util.Scanner;
 /**
  * Calculator
  * 
- * Added digit mathematical operations
- * Added removeChar function
+ * Added loop and entered 'q' -> exit 
+ * Added calculator function
  * 
  * @author enesb
- * @version v007
+ * @version v008
  */
-public class Calculator_v007 {
+public class Calculator_v008 {
 	
 	/**
 	 * It performs calculations by processing the numbers and operators it receives as an array.
@@ -286,21 +286,8 @@ public class Calculator_v007 {
 		}
 		return charTemp;
 	}
-
-	public static void main(String[] args) throws FileNotFoundException {
-		
-		Scanner scanner = new Scanner(System.in);
-		File file = new File("C:\\Users\\enesb\\Documents\\Java12BilgeAdamBoost\\Java12\\Java12AlgoritmaSorulari\\src\\projeler\\hesapMakinesi\\Description.txt");
-		Scanner scannerTxt = new Scanner(file);
-		
-		System.out.println("\u001B[35m" + "**************************************************" + "\u001B[0m");
-		while (scannerTxt.hasNextLine()) {
-	        String data = scannerTxt.nextLine();
-	        System.out.println(data);
-	      }
-		scannerTxt.close();
-		System.out.println("\u001B[35m" + "**************************************************" + "\u001B[0m");
-		
+	
+	static void calculator(Scanner scanner) {
 		String[] operatorsSplit = new String[] {"-","\\+","/","\\*","x","\\^","X","\\(","\\)"};
 		String operatorRegex = String.join("|", operatorsSplit);
 		double result = 0;
@@ -308,8 +295,12 @@ public class Calculator_v007 {
 		String mathOperation = "";
 		
 		while(!(isContainAlphanet && isCorrectExp)) {
-			System.out.println("\u001B[36m" + "Enter the mathematical expression :" + "\u001B[0m");
+			System.out.print("\u001B[36m" + "Enter the mathematical expression :" + "\u001B[0m");
 			mathOperation = scanner.next().toLowerCase();
+			if(mathOperation.equals("q")) {
+				System.out.println("System exit...");
+				System.exit(0);
+			}
 			isContainAlphanet = containsAlphanet(mathOperation);
 			isCorrectExp = isCorrectExpression(mathOperation);
 			if(!isContainAlphanet) {
@@ -381,8 +372,25 @@ public class Calculator_v007 {
 		System.out.println("\u001B[34m" + "**************************************************" + "\u001B[0m");
 		System.out.println("\u001B[32m" + mathOperation + " = " + result + "\u001B[0m");
 		System.out.println("\u001B[34m" + "**************************************************" + "\u001B[0m");
+	}
+
+	public static void main(String[] args) throws FileNotFoundException {
 		
-		scanner.close(); // scaner nesnesi kapandı
+		Scanner scanner = new Scanner(System.in);
+		File file = new File("C:\\Users\\enesb\\Documents\\Java12BilgeAdamBoost\\Java12\\Java12AlgoritmaSorulari\\src\\projeler\\hesapMakinesi\\Description.txt");
+		Scanner scannerTxt = new Scanner(file);
+		
+		System.out.println("\u001B[35m" + "**************************************************" + "\u001B[0m");
+		while (scannerTxt.hasNextLine()) {
+	        String data = scannerTxt.nextLine();
+	        System.out.println(data);
+	      }
+		scannerTxt.close();
+		System.out.println("\u001B[35m" + "**************************************************" + "\u001B[0m");
+		
+		while(true) {
+			calculator(scanner);
+		}
 
 	}
 

@@ -32,7 +32,7 @@ public class Problem24 {
 		}else {
 			System.out.println(" --> sayı mükemmel sayı değildir");
 		}
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

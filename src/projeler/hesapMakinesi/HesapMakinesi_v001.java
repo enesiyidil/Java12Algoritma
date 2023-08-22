@@ -48,7 +48,7 @@ public class HesapMakinesi_v001 {
 			sayiIndex++;
 		}
 		System.out.println(islem + " = " + sonuc);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

@@ -28,7 +28,7 @@ public class Problem11 {
 		}else {
 			System.out.println("Hatalı yarı çap değeri girdiniz.");
 		}
-		
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

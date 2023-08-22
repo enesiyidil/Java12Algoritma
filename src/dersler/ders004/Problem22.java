@@ -33,7 +33,7 @@ public class Problem22 {
 			}
 			System.out.println(deger);
 		}
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

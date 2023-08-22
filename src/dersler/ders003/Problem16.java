@@ -24,7 +24,7 @@ public class Problem16 {
 		default -> "Yanlış gün girişi";
 		};
 		System.out.println(durum);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

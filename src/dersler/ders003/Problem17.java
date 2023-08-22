@@ -22,7 +22,7 @@ public class Problem17 {
 			sayi /= 10;
 		}
 		System.out.println("Girilen sayının basamakları toplamı : " + toplam);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

@@ -29,7 +29,7 @@ public class Problem19 {
 			sayac++;
 		}
 		System.out.println(" = " + toplam);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

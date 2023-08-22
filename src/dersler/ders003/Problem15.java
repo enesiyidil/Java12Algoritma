@@ -147,7 +147,7 @@ public class Problem15 {
 		default -> "Hatalı ay seçimi";
 		};
 		System.out.println(burc);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

@@ -26,7 +26,7 @@ public class Problem32 {
 			}
 		}
 		System.out.println("'" + userKelime + "' ifadesinin içerisinde '" + userKarakter + "' sayısı -> " + eSayisi);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

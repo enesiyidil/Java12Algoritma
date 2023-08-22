@@ -23,6 +23,7 @@ public class Problem03 {
 		
 		hamFiyat = fiyat / (vergiOrani * karOrani);
 		System.out.println("Verilen ürün fiyatının ham fiyatı = " + hamFiyat);
+		scanner.close(); // scaner nesnesi kapandı
 
 	}
 

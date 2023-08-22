@@ -34,7 +34,7 @@ public class Problem08 {
 		}else {
 			System.out.println("Kenarlardan bir veya daha fazlasını negatif girdiniz");
 		}
-		
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

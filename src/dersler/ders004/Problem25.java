@@ -32,7 +32,7 @@ public class Problem25 {
 			usSonuc *= tabanDegeri;
 		}
 		System.out.println(tabanDegeri + "^" + usDegeri + " = " + usSonuc);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 	
 }

@@ -28,7 +28,7 @@ public class Problem18 {
 			}
 		}
 		System.out.println(besinKatiMi);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

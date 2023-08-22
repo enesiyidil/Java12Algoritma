@@ -32,7 +32,7 @@ public class Problem13 {
 			mesaj = "Girilen kodların her ikisi de yanlış";
 		}
 		System.out.println(mesaj);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

@@ -79,11 +79,8 @@ public class Problem28 {
 		double sonuc;
 		int sayiIndex = 1;
 		
-		int islemOnceligiSayısı = stringIfadedeKarakterSayaci(islem, '*') + stringIfadedeKarakterSayaci(islem, '/');
-		int katmanSayısıSayacı = 0;
 		
 		if(islem.contains("*") || islem.contains("/")) {
-			int islemSayısı = islemler.length;
 			for(int i = 0; i < islemler.length; i++) {
 				double sonucDegisen;
 				if(islemler[i] == '*' || islemler[i] == '/') {
@@ -105,7 +102,7 @@ public class Problem28 {
 		
 		
 		System.out.println(sonuc);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

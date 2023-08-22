@@ -5,3 +5,5 @@ Operators list and meanings
 -> '*' --- Multiplication
 -> '/' --- Division
 -> '^' --- Exponentiation
+
+-> 'q' --- Exit

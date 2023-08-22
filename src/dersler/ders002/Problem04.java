@@ -30,6 +30,7 @@ public class Problem04 {
 		else {
 			System.out.println("Büyük olan sayı : " + num2);
 		}
+		scanner.close(); // scaner nesnesi kapandı
 
 	}
 

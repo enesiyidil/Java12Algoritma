@@ -35,7 +35,7 @@ public class Problem27 {
 		default -> 0;
 		};
 		System.out.println(userNum1 + " " + ıslemTuru + " " + userNum2 + " = " + sonuc);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

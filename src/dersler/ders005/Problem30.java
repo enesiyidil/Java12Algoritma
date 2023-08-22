@@ -20,7 +20,7 @@ public class Problem30 {
 		for(int i = 0; i < userKelime.length(); i++) {
 			System.out.println(userKelime.charAt(i));
 		}
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

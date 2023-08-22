@@ -56,7 +56,7 @@ public class Problem33 {
 		System.out.println("\u001B[32m" + "Sisteme giriş yaptınız." + "\u001B[0m");
 		System.out.println("Kullanıcı	: " + "\u001B[36m" + userMail + "\u001B[0m");
 		System.out.println("Şifre		: " + "\u001B[36m" + userPass1 + "\u001B[0m");
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

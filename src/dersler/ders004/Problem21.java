@@ -34,7 +34,7 @@ public class Problem21 {
 		}else {
 			System.out.println("Girilen sayı asal değildir.");
 		}
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

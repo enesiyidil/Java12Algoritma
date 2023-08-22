@@ -43,7 +43,7 @@ public class Problem06 {
 				System.out.println("Vize notunu yanlış girdiniz. Girilen not 0 - 100 arası olmalıdır.");
 			}
 		}
-		
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

@@ -22,7 +22,7 @@ public class Problem20 {
 			sayi /= 10;
 			basamakDegeri *= 10;
 		}
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }

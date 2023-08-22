@@ -33,7 +33,7 @@ public class Problem10 {
 		}
 
 		System.out.println("Girilen en büyük sayı : " + maxNum);
-
+		scanner.close(); // scaner nesnesi kapandı
 	}
 
 }
