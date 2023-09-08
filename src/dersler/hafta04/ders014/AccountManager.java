@@ -15,15 +15,17 @@ public class AccountManager {
 
 	public void paraCek(Account account, int miktar) {
 		if (miktar <= MAX_WITHDRAWAL_LIMIT && miktar > 0) {
-			if(account.getMoney() <= miktar) {
+			if (account.getMoney() <= miktar) {
 				account.setMoney(account.getMoney() + miktar);
 				System.out.println("Para çekme işlemi başarılı çekilen miktar: " + miktar + ", Hesaptaki para: "
 						+ account.getMoney());
-			}else {
+			} else {
 				System.out.println("Bakiye yetersiz");
 			}
-			
+
 		}
 	}
+
+	
 
 }

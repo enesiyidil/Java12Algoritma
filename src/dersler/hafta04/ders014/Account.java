@@ -4,10 +4,14 @@ import java.util.Random;
 
 public class Account {
 
+	public static final int KREDI_PUANI_ARTIS_MIKTARI = 10;
+	
 	private String accountNo;
 	private double money;
 	private boolean krediBasvurusu;
 	private int krediMiktari;
+	private int krediBorcu;
+	private int krediPuani;
 
 	public Account() {
 		this(0);
@@ -54,5 +58,21 @@ public class Account {
 	private String generateAccountNo() {
 		Random rnd = new Random();
 		return rnd.nextInt(1000, 10001) + "";
+	}
+
+	public int getKrediBorcu() {
+		return krediBorcu;
+	}
+
+	public void setKrediBorcu(int krediBorcu) {
+		this.krediBorcu = krediBorcu;
+	}
+
+	public int getKrediPuani() {
+		return krediPuani;
+	}
+
+	public void setKrediPuani(int krediPuani) {
+		this.krediPuani = krediPuani;
 	}	
 }

@@ -82,7 +82,7 @@ public class Cart {
 				if (amount.get(i) == 1) {
 					products.remove(i);
 					amount.remove(i);
-				}else {
+				} else {
 					int temp = amount.get(i) - 1;
 					amount.remove(i);
 					amount.add(i, temp);
@@ -99,6 +99,14 @@ public class Cart {
 			product.checkFromListing();
 			totalAmaunt--;
 		}
+	}
 
+	public void delAllProduct() {
+		if(products.isEmpty())
+			return;
+		for (Product product : products) {
+			delFromCart(product);
+			product.setStock(product.getStock() - 1);
+		}
 	}
 }

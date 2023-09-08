@@ -6,7 +6,7 @@ import dersler.hafta04.ders013.homework.*;
 
 public class ProductOperations {
 
-	private static Cart cart = new Cart();
+	public static Cart cart = new Cart();
 
 	public static void addProduct(Scanner scanner) {
 
@@ -49,10 +49,11 @@ public class ProductOperations {
 		for (Product product : Database.getProducts()) {
 			if (id.equals(product.getId())) {
 				cart.addToCart(product);
-				break;
+				System.out.println("Product added to cart");
+				return;
 			}
 		}
-		cart.showCart();
+		System.out.println("Product not found");
 	}
 
 	public static void delProductFromCart(String id) {
@@ -60,10 +61,11 @@ public class ProductOperations {
 		for (Product product : cart.getProducts()) {
 			if (id.equals(product.getId())) {
 				cart.delFromCart(product);
-				break;
+				System.out.println("Product deleted from cart");
+				return;
 			}
 		}
-		cart.showCart();
+		System.out.println("Product not found");
 	}
 
 	public static String searchFromDatabase(String productCode) {
@@ -76,4 +78,17 @@ public class ProductOperations {
 		return "There is no such product";
 	}
 
+	public static void payment(User user) {
+		if(user.getBudget() >= cart.getTotalPrice()) {
+			cart.delAllProduct();
+			System.out.println("Payment received");
+		}else {
+			System.out.println("Your balance is not enough");
+		}
+	}
+	public static void removeFromShow() {
+		for (Product product : Database.getProducts()) {
+			product.checkFromListing();
+		}
+	}
 }
