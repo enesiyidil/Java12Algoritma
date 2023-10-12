@@ -1,0 +1,10 @@
+Mustafa,65,75,85
+Ali,65,75,85
+Mehmet,65,75,85
+Ogrenci1,65,75,85
+Ogrenci2,65,75,85
+Ogrenci3,65,75,85
+Ogrenci4,65,75,85
+Ogrenci5,65,75,85
+Ogrenci6,65,75,85
+Ogrenci7,65,75,85
